@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- SVN Version Number: $Rev: 18666 $ -->
+<!-- SVN Location: $URL: https://svn.pearsoncdg.com/Shingo/trunk/Specifications/Schemas/Unit.xsd $ -->
+<!-- Include general low level specification element types -->
+<xs:include schemaLocation="SpecGeneral.xsd"/>
+<!-- Import namespace required if qualification elements are imported to other XML files -->
+<!-- Also the attribute ref to xml:base on the element definition is also required -->
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2005/08/xml.xsd"/>
+
+<!-- Unit top level elements -->
+<xs:element name="unit" type="unitxtype" />
+
+	<xs:complexType name="unitxtype">
+		<xs:choice minOccurs="2" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<!-- The Unit's Accredited Number 
+			equal to the Unit Reference Number
+			 in National Database of Accredited Qualifications -->
+			<xs:element name="uan" type="xs:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<!-- The internal ref number of this unit -->
+			<xs:element name="unitnumber" type="xs:string" minOccurs="0"/>
+			<!-- The title of this unit -->
+			<xs:element name="title" type="titlextype" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<!-- The general description of this unit -->
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<!-- The number of guided learning hours for this unit -->
+			<xs:element name="glh" type="glhxtype"/>
+			<!-- The level of this unit -->
+			<xs:element name="level" type="xs:string" nillable="false"/>
+			<xs:element name="creditvalue" type="xs:string" nillable="true"/>
+			<!-- The Aim of this unit -->
+			<xs:element name="aim" type="xs:string" minOccurs="0"/>
+			<!-- Any learning objectives specified at unit level -->
+			<xs:element name="learningobjective" type="learningobjectivextype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- A grid of assessment criteria for the various grades grades -->
+			<xs:element name="criteriagradegrid" type="criteriagradegridxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The assessment criteria referenced in the grid -->
+			<xs:element name="assessmentcriteria" type="assessmentcriteriaxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- Next line now obsolete as replaced by new grid structure above. It was used for early BTEC specs 
+			<xs:element name="assessmentcriteriagrid" type="assessmentcriteriagridxtype" minOccurs="0" maxOccurs="unbounded"/>
+			-->
+			<!-- A learning plan with ooutline assignments -->
+			<xs:element name="outlinelearningplan" type="outlinelearningplanxtype" minOccurs="0"/>
+			<!-- A list of suggested assignments -->
+			<xs:element name="suggestedassignment" type="assignmentxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- Structural information about the unit -->
+			<xs:element name="unitcontent" type="unitcontentxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- Other associated qualifications -->
+			<xs:element name="associatedqualifications" type="associatedqualsxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- URL for printable document of the unit -->
+			<xs:element name="printdocument" type="xs:string"  minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<!-- The subject area/sector of this unit -->
+			<xs:element name="subject" type="subjectxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The awarding body (usually EDEXCEL) of this unit -->
+			<xs:element name="awardingbody" type="awardbodyxtype" minOccurs="0"/>
+			<!-- The marks for the various grades for this unit -->
+			<xs:element name="grading" type="gradingxtype"/>
+			<!-- The Summary of this unit -->
+			<xs:element name="summary" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitessentialguidance" type="xs:string"/>
+			<xs:element name="genericfreetext" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			<!-- The Regulatory Criteria of this unit -->
+			<xs:element name="regulatorycriteria" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ritsassessmentguidance" type="xs:string"/>
+			<!-- Performance criteria text about this unit -->
+			<xs:element name="performancecriteriatext" type="xs:string" nillable="false"/>
+			<!-- The method of assessment for this unit -->
+			<xs:element name="assessmentmode" type="assessmentmodextype"/>
+			<xs:element name="assessmentobjectives" type="assessmentobjectivesxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The assessment submission / exam paper for this unit -->
+			<xs:element name="submission" type="submissionxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="knowlegeunderstandings" type="knowlegeunderstandingsxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="associatedbooks" type="associatedbooksxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="associatedweblinks" type="associatedweblinksxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The UnitCode of this unit -->
+			<xs:element name="edexcelcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="status" type="xs:string"/>
+			<!-- The language this unit is taught in -->
+			<xs:element name="language" type="xs:string"/>
+			<!-- Withdrawal date for this unit -->
+			<xs:element name="dateofwithdrawal" type="accdatextype" minOccurs="0" nillable="true"/>
+			<!-- National Occupational Skills -->
+			<xs:element name="noss" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<!-- The units in this spec. Listed as XML includes for each unit xml file -->
+						<xs:element name="introduction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+						<xs:element name="nos" type="nosxtype" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<!-- Need to add in PLTS references (?) -->
+			<!-- Need to add in Functional Skills references (?) -->
+		</xs:choice>
+		<xs:attribute name="unitid" type="xs:ID" use="required"/>
+		<xs:attribute ref="xml:base"/>
+	</xs:complexType>
+
+	<xs:complexType name="unitcontentxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="unitsection" type="unitsectionxtype" />
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="unitsectionxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<xs:element name="title" type="titlextype" minOccurs="0"/>
+			<xs:element name="sectiontext" type="xs:string" minOccurs="0"/>
+			
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<xs:element name="learningobjective" type="learningobjectivextype" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="assessmentcriteria" type="assessmentcriteriaxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ranges" type="rangesxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="knowlegeunderstandings" type="knowlegeunderstandingsxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="genericfreetext" type="xs:string"/>
+			<xs:element name="unitsection" type="unitsectionxtype" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="sid" type="xs:string" use="required"/>
+	</xs:complexType>
+
+</xs:schema>

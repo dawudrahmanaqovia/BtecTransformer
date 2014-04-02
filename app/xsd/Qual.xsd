@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- SVN Version Number: $Rev: 23585 $ -->
+<!-- SVN Location: $URL: https://svn.pearsoncdg.com/Shingo/trunk/Specifications/Schemas/Qual.xsd $ -->
+<!-- Include general low level specification element types -->
+<xs:include schemaLocation="SpecGeneral.xsd"/>
+<!-- Include Unit schema -->
+<xs:include schemaLocation="Unit.xsd"/>
+<!-- Import namespace required if qualification elements are imported to other XML files -->
+<!-- Also the attribute ref to xml:base on the element definition is also required -->
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2005/08/xml.xsd"/>
+
+<!-- Qualification top level elements -->
+
+<xs:element name="qualification" type="qualificationxtype" />
+
+	<xs:complexType name="qualificationxtype">
+		<xs:choice minOccurs="2" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<!-- The imprint this qualification belongs to. Required for My BTEC platform to identify BTEC quals. -->
+			<xs:element name="imprint" type="imprintxtype" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<!-- The qualification Accredited Number equal to the OfQual qualification Reference Number -->
+			<xs:element name="qan" type="xs:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<!-- The ID for this qualification used within Edexcel -->
+			<xs:element name="edexcelcode" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The title of this qualification (may include a sub-title -->
+			<xs:element name="title" type="titlextype" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<!-- The subject area/sector of this qualification -->
+			<xs:element name="subject" type="subjectxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The level of this qualification -->
+			<xs:element name="level" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The number of guided learning hours for this qualification -->
+			<xs:element name="glh" type="glhxtype" minOccurs="0" nillable="true"/>
+			<xs:element name="creditvalue" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The framework of this qualification equal to the OfQual qualification type -->
+			<xs:element name="qualificationtype" type="qualificationtypextype" minOccurs="0" nillable="true"/>
+			<!-- The 'size' of this qualification in Excel terms. Eg Certificate, Diploma etc -->
+			<xs:element name="qualificationsize" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The 'framework' of that this qualification conforms to. Eg QCF for Qualification and Credit Framework, NQF for National Qualification Framework (Now obsolete), EQF for European Qualification Framework or FHEQ for Framework for Higher Education Qualifications  -->
+			<xs:element name="qualificationframework" type="xs:string" minOccurs="0" nillable="true"/>
+			<xs:element name="assessmentpurpose" type="assessmentpurposextype" minOccurs="0" nillable="true"/>
+			<!-- The rules of combination in textual form for user presentation -->
+			<xs:element name="rulesofcombinationtext" minOccurs="0" nillable="true">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="rule" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- The structure of the qualification, which may be multiple pathways -->
+			<!-- i.e. all of the different pathways for the qualification -->
+			<xs:element name="pathway" type="pathwayxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<!-- The general description of this qualification -->
+			<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The subject criteria for this qualification -->
+			<xs:element name="subjectcriteria" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The aims for this qualification -->
+			<xs:element name="aims" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The features of this qualification -->
+			<xs:element name="features" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The awarding body (usually EDEXCEL) of this qualification -->
+			<xs:element name="awardingbody" type="awardbodyxtype" minOccurs="0" nillable="true"/>
+			<!-- The method of assessment for this qualification -->
+			<xs:element name="assessmentmode" type="assessmentmodextype" minOccurs="0" nillable="true"/>
+			<xs:element name="assessmentobjectives" type="assessmentobjectivesxtype" minOccurs="0" nillable="true"/>
+			<!-- The dates that this qualification is valid -->
+			<xs:element name="accreditationdates" type="accreditationdatesxtype" minOccurs="0" nillable="true"/>
+			<!-- The marks for the various grades for this qualification -->
+			<xs:element name="grading" type="gradingxtype" minOccurs="0" nillable="true"/>
+			<!-- The description for achieving various grades for this qualification -->
+			<xs:element name="gradedescription" type="gradingxtype" minOccurs="0" nillable="true"/>
+			<!-- Introductory text about this qualification -->
+			<xs:element name="introductorytext" type="xs:string"  minOccurs="0" nillable="true"/>
+			<!-- Performance criteria text about this qualification -->
+			<xs:element name="performancecriteriatext" type="xs:string"  minOccurs="0" nillable="true"/>
+			<!--Forbidden conbinations for this qualification -->
+			<xs:element name="forbiddencombinations" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- Possible associated jobs with this qualification -->
+			<xs:element name="jobroles" type="jobrolesxtype" minOccurs="0" nillable="true"/>
+			<!-- Possible next steps from this qualification -->
+			<xs:element name="progression" type="progressionxtype" minOccurs="0" nillable="true"/>
+			<!-- Possible next steps from this qualification -->
+			<xs:element name="entryrequirements" type="entryrequirementsxtype" minOccurs="0" nillable="true"/>
+			<!-- Other associated qualifications -->
+			<xs:element name="associatedquals" type="associatedqualsxtype" minOccurs="0" nillable="true"/>
+			<!-- Resources needed to teach this qualification -->
+			<xs:element name="resources" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- Generic internal text about this qualification -->
+			<xs:element name="genericfreetext" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The National Classification Code for this qualification (or LEAP code) -->
+			<xs:element name="nationalclassificationcode" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- Exemptions for those with specific difficulties doing this qualification -->
+			<xs:element name="exemptions" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The language this qualification is taught in -->
+			<xs:element name="language" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The countries qualification is taught in -->
+			<xs:element name="offeredin" type="countryxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- The countries this qualification is assessed in -->
+			<xs:element name="assessedin" type="countryxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- URL for printable document of the qualification -->
+			<xs:element name="printdocument" type="xs:string"  minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+		</xs:choice>
+		<xs:attribute name="qualid" type="xs:ID" use="required"/>
+		<xs:attribute ref="xml:base"/>
+	</xs:complexType>
+
+	
+	<xs:complexType name="pathwayxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<!-- The ID for this pathway used within Edexcel -->
+			<xs:element name="pathcode" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The title of this pathway (may include a sub-title -->
+			<xs:element name="title" type="titlextype" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The group structure with rules for the units of this pathway. -->
+			<xs:element name="qualgroup" type="qualgroupxtype" minOccurs="0" nillable="true"/>
+			
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<!-- The list of units of this pathway ... -->
+			<xs:element name="qualunit" type="qualunitxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<!-- ... with their rules of combination for this pathway -->
+			<xs:element name="rulesofcombination" type="rulesofcombinationxtype" minOccurs="0" nillable="true"/>
+			<xs:element name="qualstradditionalinfo" type="xs:string" minOccurs="0" nillable="true"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="qualgroupxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<xs:element name="groupname" type="xs:string"/>
+			<xs:element name="requiredstatus" type="xs:string" minOccurs="0" nillable="true" default="optional"/>
+			<!-- One of the following pairs that describe the requirements for this grouping -->
+			<xs:element name="mincreditvalue" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="maxcreditvalue" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="minsubcomponents" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="maxsubcomponents" type="xs:int" minOccurs="0" nillable="true"/>
+			<!-- The units in this group ... -->
+			<xs:element name="qualunit" type="qualunitxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- ... or its sub-groups. -->
+			<xs:element name="qualgroup" type="qualgroupxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<xs:element name="qualstradditionalinfo" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="qualunitxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<!-- Pointer to the unit's full details -->
+			<xs:element name="unitref" type="unitrefxtype" minOccurs="1"/>
+			<!-- A numbered title string for the unit in this qualification -->
+			<xs:element name="qualunittitlenum" type="xs:string"  minOccurs="0" nillable="true"/>
+
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<!-- Other unit info in relation to this instance -->
+			<xs:element name="requiredstatus" type="xs:string" minOccurs="0" nillable="true" default="optional"/>
+			<xs:element name="creditvalue" type="xs:string"  minOccurs="0" nillable="true"/>
+			<xs:element name="qualunitpercentage" type="xs:int" minOccurs="0" nillable="true"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<!-- The following rules of combination details are required for BTEC Online specifications  -->
+	<xs:complexType name="rulesofcombinationxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="qualificationcreditvalue" type="xs:string" nillable="true"/>
+			<xs:element name="minimumcredit" type="xs:string" nillable="true"/>
+			<xs:element name="mandatoryunitcredit" type="xs:string" nillable="true"/>
+			<xs:element name="optionalunitcredit" type="xs:string" nillable="true"/>
+			<xs:element name="othersunitcredit" type="xs:string" nillable="true"/>
+			<xs:element name="pathway" type="pathwayxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<xs:element name="recognitionofpriorlearning" type="xs:string" nillable="true"/>
+			<xs:element name="barredunitcombinations" type="barredunitcombsxtype" nillable="true"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="barredunitcombsxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="barredunitcombination" type="barredunitcombxtype" nillable="true"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="barredunitcombxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="unitrefs" type="unitlistxtype" nillable="true"/>
+		</xs:choice>
+		<xs:attribute name="maxunits" type="xs:int" use="required"/>
+	</xs:complexType>
+	
+</xs:schema>

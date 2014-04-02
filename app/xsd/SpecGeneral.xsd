@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- SVN Version Number: $Rev: 18666 $ -->
+<!-- SVN Location: $URL: https://svn.pearsoncdg.com/Shingo/trunk/Specifications/Schemas/SpecGeneral.xsd $ -->
+<!-- Include W3C HTML schema to support base HTML element types  -->
+<!-- 
+<xs:include schemaLocation="http://www.w3.org/1999/xhtml"/>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/xhtml
+                          http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+-->
+
+<!-- Generic specification elements -->
+
+	<xs:complexType name="qualrefxtype">
+		<xs:attribute name="qualid" type="xs:IDREF"/>
+	</xs:complexType>
+
+	<xs:complexType name="unitrefxtype">
+		<xs:attribute name="unitid" type="xs:IDREF"/>
+	</xs:complexType>
+
+	<xs:complexType name="imprintxtype">
+		<xs:sequence>
+			<!-- The name of the imprint to identify Pearson types like BTEC, plus ... -->
+			<xs:element name="imprintname" type="xs:string" minOccurs="1"/>
+			<!-- The imprint type for the main name like Nationals and Firsts etc -->
+			<xs:element name="imprinttype" type="xs:string" minOccurs="1"/>
+			<!-- A potentially, optional sub-imprint for more complex imprints -->
+			<xs:element name="imprint" type="imprintxtype" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="learningobjectivextype">
+		<xs:sequence>
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<xs:element name="title" type="titlextype" minOccurs="0"/>
+			<xs:element name="learningobjectivetext" type="xs:string" minOccurs="1"/>
+			<!-- Reference to the assessment criteria for this LO -->
+			<xs:element name="criteriacovered" type="assessmentcriteriarefxtype"  minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<!-- The assessment criteria for this LO. NB, can either be a reference to it as above for BTECs or the actual criteria itself -->
+			<xs:element name="assessmentcriteria" type="assessmentcriteriaxtype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- Additional content text for this learning objective -->
+			<xs:element name="objectivecontent" type="xs:string" minOccurs="0"/>
+			<!-- Allow support for sub-objectives for any learning objective -->
+			<xs:element name="learningobjective" type="learningobjectivextype" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="loid" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentcriteriaxtype">
+		<xs:sequence>
+		<!-- The following elements are expected for BTEC Online specifications -->
+			<!-- The title, usually the short ID eg P1 -->
+			<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+			<!-- The main text of the assessment criteria itself -->
+			<xs:element name="criteria" type="xs:string" minOccurs="0" nillable="true"/>
+			<xs:element name="pltsvalue" minOccurs="0" maxOccurs="unbounded" nillable="false">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="key" type="xs:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+						<xs:element name="number" type="xs:int" minOccurs="0" nillable="false"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+		<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+			<xs:element name="genericfreetext" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			<xs:element name="ranges" type="rangesxtype" nillable="true" minOccurs="0"/>
+			<xs:element name="criteriarequirednumber" type="xs:int" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="acid" type="xs:ID" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentcriteriarefxtype">
+		<xs:attribute name="acid" type="xs:IDREF"/>
+		<xs:attribute name="coverage" default="all" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="all"/>
+					<xs:enumeration value="part"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<!-- assessmentcriteriagridxtype now replaced by criteriagradegridxtype. assessmentcriteriagridxtype was used for earlier My BTEC specs.
+	<xs:complexType name="assessmentcriteriagridxtype">
+		<xs:sequence>
+			<xs:element name="titlerow" minOccurs="0" nillable="false">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="preleveltitle" type="xs:string" minOccurs="0" nillable="false"/>
+						<xs:element name="passtitle" type="xs:string" minOccurs="0" nillable="false"/>
+						<xs:element name="merittitle" type="xs:string" minOccurs="0" nillable="false"/>
+						<xs:element name="distinctiontitle" type="xs:string" minOccurs="0" nillable="false"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="criteriarow" minOccurs="1" maxOccurs="unbounded" nillable="false">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="prelevelcriteria" type="assessmentcriteriaxtype" minOccurs="0" nillable="false"/>
+						<xs:element name="passcriteria" type="assessmentcriteriaxtype" minOccurs="0" nillable="true"/>
+						<xs:element name="meritcriteria" type="assessmentcriteriaxtype" minOccurs="0" nillable="true"/>
+						<xs:element name="distinctioncriteria" type="assessmentcriteriaxtype" minOccurs="0" nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	-->
+
+	<xs:complexType name="criteriagradegridxtype">
+		<xs:sequence>
+			<xs:element name="criteriacolumn" minOccurs="1"  maxOccurs="unbounded" nillable="false">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="columnnum" type="xs:int" minOccurs="0" nillable="false"/>
+						<xs:element name="title" type="xs:string" minOccurs="0" nillable="false"/>
+						<xs:element name="grade" type="gradextype" minOccurs="0" nillable="false"/>
+						<xs:element name="criteriacell" type="criteriacellxtype" minOccurs="0"  maxOccurs="unbounded" nillable="false"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="criteriacellxtype">
+		<xs:sequence>
+			<xs:element name="rownum" type="xs:int" minOccurs="0" nillable="false"/>
+			<xs:element name="rowspan" type="xs:int" minOccurs="0" nillable="false"/>
+			<xs:element name="colnum" type="xs:int" minOccurs="0" nillable="false"/>
+			<xs:element name="colspan" type="xs:int" minOccurs="0" nillable="false"/>
+			<xs:element name="assessmentcriteria" type="assessmentcriteriarefxtype" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="outlinelearningplanxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" minOccurs="0" nillable="false"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="activity" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+				<xs:element name="assignmentref" type="assignmentrefxtype" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="assignmentxtype">
+		<xs:sequence>
+			<xs:element name="numbertitle" type="xs:string" minOccurs="0" nillable="false"/>
+			<xs:element name="title" type="titlextype" minOccurs="0" nillable="false"/>
+			<xs:element name="scenario" type="xs:string" minOccurs="0" nillable="true"/>
+			<xs:element name="assessmentmethod" type="xs:string" minOccurs="0" nillable="true"/>
+			<xs:element name="criteriacovered" type="assessmentcriteriarefxtype"  minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+		</xs:sequence>
+		<xs:attribute name="assignmentid" type="xs:ID" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="assignmentrefxtype">
+		<xs:attribute name="assignmentid" type="xs:IDREF"/>
+	</xs:complexType>
+
+	<xs:complexType name="unitlistxtype">
+		<xs:sequence>
+			<!-- Pointer to each unit's full details -->
+			<xs:element name="unitref" type="unitrefxtype" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="unitgroupxtype">
+		<xs:sequence>
+			<!-- Group title and description plus a list of the units in this group -->
+			<xs:element name="title" type="titlextype"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitlist" type="unitlistxtype" />
+		</xs:sequence>
+	</xs:complexType>
+
+	
+	<xs:complexType name="associatedqualsxtype">
+		<xs:choice>
+			<xs:element name="qualificationref" minOccurs="0" maxOccurs="unbounded" nillable="true">
+				<xs:complexType>
+					<xs:sequence>
+						<!-- The qualification Accredited Number equal to the OfQual Qualification Reference Number -->
+						<xs:element name="qan" type="xs:string"/>
+						<!-- The title of this qualification -->
+						<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+						<xs:element name="level" type="xs:string" minOccurs="0" nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="unitref" minOccurs="0" maxOccurs="unbounded" nillable="true">
+				<xs:complexType>
+					<xs:sequence>
+						<!-- The Unit Accredited Number equal to the OfQual Unit Reference Number -->
+						<xs:element name="uan" type="xs:string"/>
+						<!-- The title of this qualification -->
+						<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+						<xs:element name="level" type="xs:string" minOccurs="0" nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="associatedbooksxtype">
+		<xs:sequence>
+			<xs:element name="bookref">
+				<xs:complexType>
+					<xs:all>
+						<!-- The ISBN of the book -->
+						<xs:element name="isbn" type="xs:string" minOccurs="0" nillable="true"/>
+						<!-- The title of the book -->
+						<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="associatedweblinksxtype">
+		<xs:sequence>
+			<xs:element name="weblinkref">
+				<xs:complexType>
+					<xs:all>
+						<!-- The URL of the weblink -->
+						<xs:element name="url" type="xs:string" minOccurs="0" nillable="true"/>
+						<!-- The title of the link -->
+						<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="knowlegeunderstandingsxtype">
+		<xs:sequence>
+<!--			<xs:group ref="block"/>  -->
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="knowlegeunderstanding" type="knowlegeunderstandingxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="section" type="sectionxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="sectionxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="knowlegeunderstanding" type="knowlegeunderstandingxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="section" type="sectionxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="knowlegeunderstandingxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="subitems" type="subitemsxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentobjectivesxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" minOccurs="0"/>
+			<xs:element name="assessmentobjective" type="assessmentobjectivextype" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentobjectivextype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" minOccurs="0"/>
+			<xs:element name="objectivetext" type="xs:string" minOccurs="0"/>
+			<xs:element name="ranges" type="rangesxtype" nillable="true" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="aoid" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="rangesxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="range" type="rangextype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="rangextype">
+		<xs:sequence>
+			<xs:element name="minvalue" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="maxvalue" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="subitems" type="subitemsxtype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="subitemsxtype">
+		<xs:sequence>
+			<xs:element name="subitem" type="subitemxtype"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="subitemxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" nillable="true" minOccurs="0"/>
+			<xs:element name="body" type="xs:string" nillable="true" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="submissionxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<!-- The submission/paper's entry code / cash in code -->
+			<xs:element name="entrycode" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The title of the submission/paper -->
+			<xs:element name="title" type="titlextype" minOccurs="0" nillable="true"/>
+			<!-- The general description of this submission/paper -->
+			<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+			<!-- The marking/grading scheme for this paper -->
+			<xs:element name="grading" type="gradingxtype" minOccurs="0" nillable="true"/>
+			<xs:element name="assessmentobjectives" type="assessmentobjectivesxtype" minOccurs="0" nillable="true"/>
+			<xs:element name="examtime" type="xs:string" nillable="true" minOccurs="0"/>
+			<!-- The dates that this paper is valid -->
+			<xs:element name="accreditationdates" type="accreditationdatesxtype" minOccurs="0" nillable="true"/>
+			<!-- Potential time periods that the paper is valid -->
+			<xs:element name="frequency" type="xs:string" minOccurs="0" nillable="true"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:simpleType name="pedidxtype">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="8"/>
+			<xs:pattern value="([A-Z]{1}[0-9]{6})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="titlextype" mixed="true">
+		<!-- The main title text, plus ... -->
+		<xs:sequence>
+			<!-- An optional sub-title-->
+			<xs:element name="subtitle" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="bodytextxtype">
+		<xs:sequence>
+			<xs:element name="title" type="titlextype" minOccurs="0"/>
+			<xs:element name="body" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="awardbodyxtype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="qualificationtypextype" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="1">
+			<xs:element name="qualificationtype" type="qualificationtypextype"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="subjectxtype">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<!-- The display text for this subject -->
+			<xs:element name="title" type="titlextype"  minOccurs="0" maxOccurs="1"/>
+			<!-- The Pearson ID for the particular vocabulary -->
+			<xs:element name="vocabid" type="xs:string" minOccurs="0"/>
+			<!-- The Pearson ID for this subject -->
+			<xs:element name="subjectid" type="xs:string" minOccurs="0"/>
+			<!-- The Subject of this qualification may have any number 0+ of sub-Subjects -->
+			<xs:element name="subject" type="subjectxtype" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="type" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentmodextype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="jobrolesxtype">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="title" type="titlextype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The job roles that this qualification may support -->
+			<xs:element name="jobrole" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="progressionxtype">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="title" type="titlextype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- The job roles that this qualification may support -->
+			<xs:element name="progressiontext" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="progressionlevel" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="entryrequirementsxtype">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="title" type="titlextype" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- Any specific entry requirements for this qualification and if they are mandatory or not -->
+			<xs:element name="entryrequirementstatus" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+			<xs:element name="entryrequirement" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="glhxtype">
+		<xs:sequence>
+			<xs:element name="glhvalue" type="xs:string"/>
+			<xs:element name="lhvalue" type="xs:string" minOccurs="0"/>
+			<!-- The number of guided learning hours for a diploma in this qualification -->
+			<xs:element name="diplomaglh" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="countryxtype">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="iso3code" type="xs:string" minOccurs="0"/>
+			<xs:element name="iso2code" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="accreditationdatesxtype">
+		<xs:sequence>
+			<xs:element name="accstartdate" type="accdatextype" minOccurs="0" nillable="true"/>
+			<xs:element name="accenddate" type="accdatextype" minOccurs="0" nillable="true"/>
+			<xs:element name="acccentrestartdate" type="accdatextype" minOccurs="0" nillable="true"/>
+			<xs:element name="acccertstartdate" type="accdatextype" minOccurs="0" nillable="true"/>
+			<xs:element name="acccertenddate" type="accdatextype" minOccurs="0" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="accdatextype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="dval" type="xs:date" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="gradingxtype">
+		<xs:sequence>
+			<xs:element name="cashincode" type="cashincodextype" minOccurs="0" nillable="true"/>
+			<xs:element name="maxuniformmark" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="maxrawmark" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="grades" type="gradesxtype" minOccurs="0" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="cashincodextype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="gradesxtype">
+		<xs:sequence>
+			<xs:element name="grade" type="gradextype" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="gradextype">
+		<xs:all>
+			<xs:element name="value" type="xs:string"/>
+			<!-- Description of this grading -->
+			<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+			<xs:element name="mark" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="ucaspoints" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="scaatpoints" type="xs:int" minOccurs="0" nillable="true"/>
+			<xs:element name="performancepoints" type="xs:int" minOccurs="0" nillable="true"/>
+		</xs:all>
+	</xs:complexType>
+	
+	<xs:complexType name="assessmentpurposextype" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="assessmentpurpose" type="assessmentpurposextype"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="levelxtype" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="level" type="levelxtype"/>
+		</xs:choice>
+	</xs:complexType>
+		
+	<xs:complexType name="namextype">
+		<xs:sequence>
+			<!-- The contributors name elements: first name, initials, last name and display name -->
+			<xs:element name="firstname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="middlename" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="lastname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="displayname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<!-- The type of this contributor: "AuthorisedBy", "PreparedBy" etc -->
+		<xs:attribute name="type" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="nosxtype">
+		<xs:sequence>
+			<!-- The National Occupational Standard and the URL and Address of the authority -->
+			<xs:element name="nosstandard" type="xs:string" minOccurs="0" maxOccurs="1"/>			
+			<xs:element name="nosauthorityref" type="nosauthrefxtype" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<!-- The ID of this NOS -->
+		<xs:attribute name="id" type="xs:string" use="optional"/>
+		<!-- The type of this NOS -->
+		<xs:attribute name="type" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="nosauthxtype">
+		<xs:sequence>
+			<!-- The National Occupational Standard authority and its URL and Address -->
+			<xs:element name="authority" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="tel" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="type" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<!-- The ID of this NOS -->
+		<xs:attribute name="nosid" type="xs:string" use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="nosauthrefxtype">
+		<xs:attribute name="nosid" type="xs:IDREF"/>
+	</xs:complexType>
+
+</xs:schema>

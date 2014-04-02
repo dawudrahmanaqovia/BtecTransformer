@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- SVN Version Number: $Rev: 17268 $ -->
+<!-- SVN Location: $URL: https://svn.pearsoncdg.com/Shingo/trunk/Specifications/Schemas/Spec.xsd $ -->
+<!-- Include general low level specification element types -->
+<xs:include schemaLocation="SpecGeneral.xsd"/>
+<!-- Include Unit schema -->
+<xs:include schemaLocation="Unit.xsd"/>
+<!-- Include Qualification schema -->
+<xs:include schemaLocation="Qual.xsd"/>
+
+<!-- Include location for consistent text sections used across specifications as entitity references -->
+
+<!-- Edexcel specifications top level elements -->
+
+	<xs:element name="specification">
+		<xs:complexType>
+			<xs:choice minOccurs="2" maxOccurs="unbounded">
+			<!-- The following elements are expected for BTEC Online specifications -->
+				<!-- The specification's "Publications Code" -->
+				<xs:element name="pubcode" type="xs:string" minOccurs="1" maxOccurs="1" nillable="true"/>
+				<!-- The title of this specification -->
+				<xs:element name="title" type="titlextype" minOccurs="1" maxOccurs="1"/>
+				<!-- The subject area/sector of this specification -->
+				<xs:element name="subject" type="subjectxtype" minOccurs="1" nillable="true"/>
+				<!-- URL for printable document of the specification -->
+				<xs:element name="printdocument" type="xs:string"  minOccurs="1" nillable="true"/>
+				<!-- Pointer(s) to the qualifications covered by this specification -->
+				<xs:element name="qualref" type="qualrefxtype"  minOccurs="1" nillable="true"/>
+				<!-- Ordered list of all units for this specification -->
+				<xs:element name="unitlist" type="unitlistxtype" minOccurs="0" nillable="true"/>
+				<!-- The revision number for this version of the specification -->
+				<xs:element name="revision" type="xs:string"  minOccurs="0" maxOccurs="1" nillable="true"/>
+				<!-- Contributors have a type attribute and a name element -->
+				<xs:element name="contributor" type="namextype" minOccurs="0" maxOccurs="unbounded" />
+
+				<!-- The following elements are here to permit include statements to include the associated qualificationa and unit XML files for full XML validation of all referenced IDs -->
+				<xs:element name="quals" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- The qualifications in this spec. Listed as XML includes for each qaulification xml file -->
+							<xs:element name="qualification" type="qualificationxtype" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="units" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- The units in this spec. Listed as XML includes for each unit xml file -->
+							<xs:element name="unit" type="unitxtype" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+			<!-- The following elements are not required for BTEC Online specifications and will be ignored by the system -->
+				<!-- The general description of this specification -->
+				<xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The introduction for this specification -->
+				<xs:element name="introductorytext" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The aims for this specification -->
+				<xs:element name="aims" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The features of this specification -->
+				<xs:element name="features" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The Rationale of this specification -->
+				<xs:element name="rationale" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The entry profile for this specification -->
+				<xs:element name="entryprofile" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The National Occupational Standards for this specification and where to find their details -->
+				<xs:element name="nosauthorities" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<!-- The units in this spec. Listed as XML includes for each unit xml file -->
+							<xs:element name="introduction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="nosauthority" type="nosauthxtype" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<!-- The subject criteria for this specification -->
+				<xs:element name="subjectcriteria" type="xs:string" minOccurs="0" nillable="true"/>
+				<!-- The awarding body (usually EDEXCEL) of this specification -->
+				<xs:element name="awardingbody" type="awardbodyxtype" minOccurs="0" nillable="true"/>
+				<!-- The level of this specification -->
+				<xs:element name="level" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+				<!-- Generic internal text about this specification -->
+				<xs:element name="genericfreetext" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+				<!-- Any annexes to the specification -->
+				<xs:element name="annexes" minOccurs="0">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<!-- The units in this spec. Listed as XML includes for each unit xml file -->
+							<xs:element name="title" type="titlextype" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="annex" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="id" type="pedidxtype" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
