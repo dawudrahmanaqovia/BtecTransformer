@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit unitid="D_504_1173">
+   <uan>D/504/1173</uan>
+   <unitnumber>2</unitnumber>
+   <title>Promoting Children’s Development Through Play</title>
+   <description><![CDATA[
+<p>We know that play has a pivotal role in helping children to learn new skills and knowledge. All early years settings now use play as a way of teaching children and supporting their development, and it forms the basis of early years frameworks.</p>
+
+      <p>In this unit you will look at how early years settings use play to promote children’s learning and development at different ages and stages, including babies, and the types of play opportunities that early years settings usually provide. You will find that play can be structured in broadly three ways: adult-led, adult-initiated and child-initiated play. Each way has its benefits, but also potential disadvantages, and early years settings use a combination of these structures to support children’s play.</p>
+
+      <p>By the end of this unit, you will have learnt that play is complex, yet very important to children’s learning and development.</p>
+]]></description>
+   <glh>
+      <glhvalue>30</glhvalue>
+   </glh>
+   <level>1 and 2</level>
+   <assessmentmode id="">Internal</assessmentmode>
+   <learningobjective loid="D_504_1173.LOA">
+      <title>A</title>
+      <learningobjectivetext>Understand how play promotes children’s development in early years settings</learningobjectivetext>
+      <criteriacovered acid="D_504_1173.1A.1"/>
+      <criteriacovered acid="D_504_1173.2A.P1"/>
+      <criteriacovered acid="D_504_1173.2A.M1"/>
+      <criteriacovered acid="D_504_1173.2A.D1"/>
+      <criteriacovered acid="D_504_1173.1A.2"/>
+      <criteriacovered acid="D_504_1173.2A.P2"/>
+      <criteriacovered acid="D_504_1173.1B.3"/>
+      <criteriacovered acid="D_504_1173.2B.P3"/>
+      <criteriacovered acid="D_504_1173.2B.M2"/>
+      <criteriacovered acid="D_504_1173.2B.D2"/>
+   </learningobjective>
+   <learningobjective loid="D_504_1173.LOB">
+      <title>B</title>
+      <learningobjectivetext>Understand how different play opportunities promote children’sdevelopment</learningobjectivetext>
+      <criteriacovered acid="D_504_1173.1B.3"/>
+      <criteriacovered acid="D_504_1173.2B.P3"/>
+      <criteriacovered acid="D_504_1173.2B.M2"/>
+      <criteriacovered acid="D_504_1173.2B.D2"/>
+   </learningobjective>
+   <learningobjective loid="D_504_1173.LOC">
+      <title>C</title>
+      <learningobjectivetext>Understand how play is structured in early years settings to promote children’s development</learningobjectivetext>
+      <criteriacovered acid="D_504_1173.1C.4"/>
+      <criteriacovered acid="D_504_1173.2C.P4"/>
+      <criteriacovered acid="D_504_1173.2C.M3"/>
+      <criteriacovered acid="D_504_1173.2C.D3"/>
+   </learningobjective>
+   <criteriagradegrid>
+      <criteriacolumn>
+         <columnnum>1</columnnum>
+         <title/>
+         <grade>
+            <value>Pre-Level</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.1A.1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>2</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.1A.2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.1B.3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.1C.4"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>2</columnnum>
+         <title/>
+         <grade>
+            <value>Pass</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2A.P1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>2</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2A.P2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2B.P3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2C.P4"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>3</columnnum>
+         <title/>
+         <grade>
+            <value>Merit</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="D_504_1173.2A.M1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2B.M2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2C.M3"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>4</columnnum>
+         <title/>
+         <grade>
+            <value>Distinction</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="D_504_1173.2A.D1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2B.D2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="D_504_1173.2C.D3"/>
+         </criteriacell>
+      </criteriacolumn>
+   </criteriagradegrid>
+   <assessmentcriteria acid="D_504_1173.1A.1">
+      <title>1A.1</title>
+      <criteria><![CDATA[<p>	Identify two ways in which children play at each age range.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.1A.2">
+      <title>1A.2</title>
+      <criteria><![CDATA[<p>	Identify two ways in which adults in early years settings support the play of children in each age range.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.1B.3">
+      <title>1B.3</title>
+      <criteria><![CDATA[<p>	Identify play opportunities for each age range and the development that will 
+be promoted.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2A.P1">
+      <title>2A.P1</title>
+      <criteria><![CDATA[<p>	Describe how children play at each age range, using appropriate examples.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2A.P2">
+      <title>2A.P2</title>
+      <criteria><![CDATA[<p>	Describe how adults in early years settings support children’s play 
+at each age range, using appropriate examples.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2B.P3">
+      <title>2B.P3</title>
+      <criteria><![CDATA[<p>	Describe play opportunities for each age range and how development will be promoted, using appropriate examples.
+*</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2A.M1">
+      <title>2A.M1</title>
+      <criteria><![CDATA[<p>	Explain the importance of the support provided by adults in early years settings for children’s play at each age range.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2B.M2">
+      <title>2B.M2</title>
+      <criteria><![CDATA[<p>Explain how two selected play opportunities for each age range promote different areas of child development.
+*</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2A.D1">
+      <title>2A.D1</title>
+      <criteria><![CDATA[<p>	Assess the suitability of the support provided by adults for children in an early years setting, using a case study.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2B.D2">
+      <title>2B.D2</title>
+      <criteria><![CDATA[<p>	Assess the value of 
+two selected play opportunities on all areas of a child’s development.
+*</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.1C.4">
+      <title>1C.4</title>
+      <criteria><![CDATA[<p>	Outline how early years settings structure play 
+in different ways to promote children’s development.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2C.P4">
+      <title>2C.P4</title>
+      <criteria><![CDATA[<p>	Describe how early years settings structure play 
+in different ways to promote children’s development, using appropriate examples.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2C.M3">
+      <title>2C.M3</title>
+      <criteria><![CDATA[<p>	Discuss the extent to which the way play is structured in an early years setting may benefit children’s development. </p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="D_504_1173.2C.D3">
+      <title>2C.D3</title>
+      <criteria><![CDATA[<p>	Assess the effect on 
+a child’s development 
+of the way play is structured in an early years setting, using a case study. </p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <suggestedassignment assignmentid="D_504_1173.1">
+      <numbertitle>Assignment: 1</numbertitle>
+      <title>How play promotes children’s development</title>
+      <scenario><![CDATA[<p>You are about to start work in an early years setting and in preparation for this the manager has asked you to look at how children play at different ages and how adults support children’s play at each age range. This will help you to provide age-appropriate play opportunities for children and know how to support them. You 
+are to produce a leaflet or a chart.
+You need to:</p>
+         <ul>
+            <li>describe how children play at birth up to two, two up to five, and five up to eight years, with examples</li>
+            <li>describe how adults in early years settings support children’s play at birth up to two, 
+two up to five, and five up to eight years, 
+with examples</li>
+            <li>explain the importance of the support provided by adults for children’s play at 
+each age range (birth up to two, two up to five, and five up to eight years)</li>
+            <li>assess the suitability of the support provided by adults for children in an early years setting.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>The leaflet could include a chart and a report. </sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="D_504_1173.1A.1"/>
+      <criteriacovered coverage="all" acid="D_504_1173.1A.2"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2A.P1"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2A.P2"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2A.M1"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2A.D1"/>
+   </suggestedassignment>
+   <suggestedassignment assignmentid="D_504_1173.2">
+      <numbertitle>Assignment: 2</numbertitle>
+      <title>How play opportunities promote children’s learning and development</title>
+      <scenario><![CDATA[<p>You have been asked by the manager of Footsteps Children’s Centre to put together 
+an information file about play opportunities 
+to promote the learning and development of children that staff will be able to refer to. The children who attend the centre are aged from birth up to eight years. You are to produce an information file.
+You need to:</p>
+         <ul>
+            <li>use examples to describe play opportunities for children (aged from birth up to two, two up to five, and five up to eight years)</li>
+            <li>show how each of the examples of play opportunities for children (aged from birth up to two, two up to five, and five up to eight years) will promote their development</li>
+            <li>explain how two selected play opportunities for each age range promote different areas 
+of child development</li>
+            <li>assess the value of two selected play opportunities on all areas of a child’s development.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>This could include written/IT-produced accounts. </sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="D_504_1173.1B.3"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2B.P3"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2B.M2"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2B.D2"/>
+   </suggestedassignment>
+   <suggestedassignment assignmentid="D_504_1173.3">
+      <numbertitle>Assignment: 3</numbertitle>
+      <title>How early years settings structure play to promote children’s learning and development</title>
+      <scenario><![CDATA[<p>Some parents of children in the setting have been questioning staff about why children spend time playing without adult direction.
+You have be asked to help the staff prepare for an open evening to inform parents about why play is structured in different ways in the setting. You are to produce information for parents for the open evening.
+You need to:</p>
+         <ul>
+            <li>use examples to describe how early years settings structure play in different ways to promote children’s development</li>
+            <li>discuss the extent to which structuring play in an early years setting may benefit children’s development</li>
+            <li>assess how structuring play in an early years setting may affect a child’s development.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>This could include handouts, posters, articles and presentation slides.</sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="D_504_1173.1C.4"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2C.P4"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2C.M3"/>
+      <criteriacovered coverage="all" acid="D_504_1173.2C.D3"/>
+   </suggestedassignment>
+   <unitcontent>
+      <unitsection sid="D_504_1173.LOA">
+         <title>Learning aim A: Understand how play promotes children’s development in early years settings</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic A.1 How children play at different ages/stages of development</b>
+            </p>
+            <p>The nature of play is that it is enjoyable and motivating for children of all ages. It is used in early years settings to support children’s development. Learners must be able to understand that children at different ages/stages of development have different play needs as this is essential in providing play that ensures that children are sufficiently challenged, are engaged, find play enjoyable and learn new skills.</p>
+            <p>
+               <b>Play from birth up to two years:</b>
+            </p>
+            <p/>
+            <ul>
+               <li>significant time spent playing with adults, e.g. playing close to familiar adults, watching other children playing</li>
+               <li>focus on moving and touching things, and until around eighteen months putting things in their mouths, e.g. exploring objects and their surrounding environment</li>
+               <li>games and actions are repeated and remain enjoyable, e.g. knocking down towers 
+of blocks, jack in the box, pushing toy cars down a slope.</li>
+            </ul>
+            <p>
+               <b>Play</b>
+            </p>
+            <p>at two up to five years:</p>
+            <ul>
+               <li>increasing interest in being with others and from three years starting to actively play with others, e.g. playing alongside other children, starting to take turns in play and beginning to learn to share</li>
+               <li>play becomes more complex and requires greater gross and fine motor coordination, e.g. balancing on climbing equipment, throwing and kicking balls</li>
+               <li>talk becomes central to play, especially during construction and imaginative play, e.g. talking through their actions and their experiences during play</li>
+               <li>children may need adults to play with them and to provide supervision and support, e.g. wanting adult encouragement and reassurance.</li>
+            </ul>
+            <p>
+               <b>Play</b>
+            </p>
+            <p>at five up to eight years:</p>
+            <ul>
+               <li>begin to increasingly organise and structure their play with minimum adult support, e.g. making decisions about how they want to play and what resources they need</li>
+               <li>they may introduce their own rules, e.g. making games more challenging, choosing who can join in</li>
+               <li>play is complex and requires increasing levels of skill, e.g. involving physical challenge and a combination of skills.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+      <unitsection sid="D_504_1173.LOB">
+         <title>Learning aim B: Understand how different play opportunities promote children’s development</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic B.1 Play opportunities and how they promote children’s development</b>
+            </p>
+            <p>The importance of providing a range of different play opportunities to ensure that children learn a range of skills across each of the areas of development (physical, cognitive, language and communication development, emotional and social). The importance of early years settings providing different play opportunities according to the age/stage of the child. Learners must be able to describe play opportunities to promote development in each of the age ranges (birth up to two years, two up to five years and five up to eight years). Learners must know how the play opportunities promote skills in the areas of development and how each play opportunity could promote more than one area of children’s development.</p>
+            <p>
+               <b>Play opportunities from birth up to two years:</b>
+            </p>
+            <ul>
+               <li>physical play provision of equipment to promote fine and gross motor skills, 
+e.g. rattles, baby gym, push and pull toys, stacking beakers</li>
+               <li>heuristic play – play with collections of objects and everyday materials of different shapes, textures and sizes in a treasure basket for babies until mobile and in containers for toddlers, to promote concentration, imagination and learning about shape, size and texture</li>
+               <li>games played with an adult – e.g. knocking down stacking beakers whereby babies learn to take turns and make eye contact, hiding toys under a cushion</li>
+               <li>sensory play – e.g. water, shaving foam, dried pasta, gloop (mixture of cornflour and water) to help concentration, fine motor skills, learning about texture and promotion of confidence</li>
+               <li>imaginative play with adults – e.g. toy telephones, puppets, toy kitchens</li>
+               <li>construction play with adults (from nine months) – e.g. stacking beakers, 
+using small wooden bricks, lift up puzzles.</li>
+            </ul>
+            <p>
+               <b>Two</b>
+            </p>
+            <p>up to five years:</p>
+            <ul>
+               <li>physical play to help children learn coordination and balance, and to develop gross motor movements and learn social skills, e.g. balls, climbing frames, hoops, tricycles</li>
+               <li>heuristic play, e.g. play with collections of objects and everyday materials 
+of different shapes, textures and sizes to encourage sorting skills and language, 
+and to allow children to discover new objects</li>
+               <li>simple board games (from three years), e.g. picture lotto, snap, magnetic fish game to promote turn taking, counting, problem-solving</li>
+               <li>sensory play, e.g. sand, water, dough to help concentration, fine motor skills, 
+early writing movements, encouraging communication</li>
+               <li>imaginative play, e.g. dressing-up clothes, home corner, toy cars, toy farm animals and people, in order for children to develop communication, social skills and imagination</li>
+               <li>construction play, e.g. wooden blocks, building blocks to encourage turn taking and imagination, and for children to learn about textures, shapes and problem-solving.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+      <unitsection sid="D_504_1173.LOC">
+         <title>Learning aim C: Understand how play is structured in early years settings to promote children’s development</title>
+         <sectiontext><![CDATA[]]></sectiontext>
+      </unitsection>
+   </unitcontent>
+   <printdocument>D_504_1173</printdocument>
+</unit>

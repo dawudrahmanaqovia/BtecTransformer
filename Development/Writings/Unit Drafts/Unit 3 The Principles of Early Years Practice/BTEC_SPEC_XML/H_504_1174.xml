@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit unitid="H_504_1174">
+   <uan>H/504/1174</uan>
+   <unitnumber>3</unitnumber>
+   <title>The Principles of Early Years Practice</title>
+   <description><![CDATA[
+<p>There are some general principles that underpin work in early years settings. These principles shape the way settings are run and the ways in which adults in settings work with children and their families.</p>
+
+      <p>In this unit you will look at some of the key principles that are reflected in best practice in early years. You will learn about inclusive practice as a way of valuing children and ensuring that they can benefit from the opportunities within the setting. You will also explore how children are empowered to ensure that children learn to become independent and develop a strong self-image, as well as ways in which this is put into practice.</p>
+
+      <p>A further principle of working with children is the key person approach, which early years settings use to meet children’s emotional and care needs. In this unit, you 
+will learn why the key person approach is important to children’s learning and development. If you wish to work in early years, it is important that you have a 
+good understanding of the principles as you will need to incorporate them into 
+your practice.</p>
+]]></description>
+   <glh>
+      <glhvalue>60</glhvalue>
+   </glh>
+   <level>1 and 2</level>
+   <assessmentmode id="">Internal</assessmentmode>
+   <learningobjective loid="H_504_1174.LOA">
+      <title>A</title>
+      <learningobjectivetext>Understand the importance of inclusive practice in early years</learningobjectivetext>
+      <criteriacovered acid="H_504_1174.1A.1"/>
+      <criteriacovered acid="H_504_1174.2A.P1"/>
+      <criteriacovered acid="H_504_1174.2A.M1"/>
+      <criteriacovered acid="H_504_1174.2A.D1"/>
+      <criteriacovered acid="H_504_1174.1A.2"/>
+      <criteriacovered acid="H_504_1174.2A.P2"/>
+      <criteriacovered acid="H_504_1174.1B.3"/>
+      <criteriacovered acid="H_504_1174.2B.P3"/>
+      <criteriacovered acid="H_504_1174.2B.M2"/>
+      <criteriacovered acid="H_504_1174.2B.D2"/>
+   </learningobjective>
+   <learningobjective loid="H_504_1174.LOB">
+      <title>B</title>
+      <learningobjectivetext>Explore ways in which early years settings implement inclusive practice</learningobjectivetext>
+      <criteriacovered acid="H_504_1174.1B.3"/>
+      <criteriacovered acid="H_504_1174.2B.P3"/>
+      <criteriacovered acid="H_504_1174.2B.M2"/>
+      <criteriacovered acid="H_504_1174.2B.D2"/>
+   </learningobjective>
+   <learningobjective loid="H_504_1174.LOC">
+      <title>C</title>
+      <learningobjectivetext>Understand how children are empowered in early years settings</learningobjectivetext>
+      <criteriacovered acid="H_504_1174.1C.4"/>
+      <criteriacovered acid="H_504_1174.2C.P4"/>
+      <criteriacovered acid="H_504_1174.2C.M3"/>
+      <criteriacovered acid="H_504_1174.2C.D3"/>
+      <criteriacovered acid="H_504_1174.1C.5"/>
+      <criteriacovered acid="H_504_1174.2C.P5"/>
+      <criteriacovered acid="H_504_1174.1D.6"/>
+      <criteriacovered acid="H_504_1174.2D.P6"/>
+      <criteriacovered acid="H_504_1174.2D.M4"/>
+      <criteriacovered acid="H_504_1174.2D.D4"/>
+      <criteriacovered acid="H_504_1174.1D.7"/>
+      <criteriacovered acid="H_504_1174.2D.P7"/>
+   </learningobjective>
+   <learningobjective loid="H_504_1174.LOD">
+      <title>D</title>
+      <learningobjectivetext>Understand the importance of the key person approach in supporting children’s development</learningobjectivetext>
+      <criteriacovered acid="H_504_1174.1D.6"/>
+      <criteriacovered acid="H_504_1174.2D.P6"/>
+      <criteriacovered acid="H_504_1174.2D.M4"/>
+      <criteriacovered acid="H_504_1174.2D.D4"/>
+      <criteriacovered acid="H_504_1174.1D.7"/>
+      <criteriacovered acid="H_504_1174.2D.P7"/>
+   </learningobjective>
+   <criteriagradegrid>
+      <criteriacolumn>
+         <columnnum>1</columnnum>
+         <title/>
+         <grade>
+            <value>Pre-Level</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1A.1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>2</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1A.2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1B.3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1C.4"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>6</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1C.5"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>8</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1D.6"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>9</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.1D.7"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>2</columnnum>
+         <title/>
+         <grade>
+            <value>Pass</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2A.P1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>2</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2A.P2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2B.P3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2C.P4"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>6</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2C.P5"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>8</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2D.P6"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>9</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2D.P7"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>3</columnnum>
+         <title/>
+         <grade>
+            <value>Merit</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2A.M1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2B.M2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2C.M3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>8</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2D.M4"/>
+         </criteriacell>
+      </criteriacolumn>
+      <criteriacolumn>
+         <columnnum>4</columnnum>
+         <title/>
+         <grade>
+            <value>Distinction</value>
+         </grade>
+         <criteriacell>
+            <rownum>1</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2A.D1"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>4</rownum>
+            <rowspan>1</rowspan>
+            <assessmentcriteria acid="H_504_1174.2B.D2"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>5</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2C.D3"/>
+         </criteriacell>
+         <criteriacell>
+            <rownum>8</rownum>
+            <rowspan>2</rowspan>
+            <assessmentcriteria acid="H_504_1174.2D.D4"/>
+         </criteriacell>
+      </criteriacolumn>
+   </criteriagradegrid>
+   <assessmentcriteria acid="H_504_1174.1A.1">
+      <title>1A.1</title>
+      <criteria><![CDATA[<p>	Outline three benefits 
+to children of inclusive practice in early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1A.2">
+      <title>1A.2</title>
+      <criteria><![CDATA[<p>	Outline three ways in which children may be affected by non-inclusive practice in early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1B.3">
+      <title>1B.3</title>
+      <criteria><![CDATA[<p>	Outline how inclusive practice is implemented in selected early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2A.P1">
+      <title>2A.P1</title>
+      <criteria><![CDATA[<p>	Describe how children benefit from inclusive practice in early years settings.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2A.P2">
+      <title>2A.P2</title>
+      <criteria><![CDATA[<p>	Describe ways in which children may be affected by non-inclusive practice in early years settings.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2B.P3">
+      <title>2B.P3</title>
+      <criteria><![CDATA[<p>	Describe how inclusive practice is implemented in selected early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2A.M1">
+      <title>2A.M1</title>
+      <criteria><![CDATA[<p>	Explain the potential impact on children 
+of inclusive and non-inclusive practice in early years settings, using appropriate examples.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2B.M2">
+      <title>2B.M2</title>
+      <criteria><![CDATA[<p>	Explain how inclusive practice is implemented in a selected early years setting. </p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2A.D1">
+      <title>2A.D1</title>
+      <criteria><![CDATA[<p>	Compare how inclusive and non-inclusive practice affects children in early years settings, using case studies.
+#</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2B.D2">
+      <title>2B.D2</title>
+      <criteria><![CDATA[<p>	Assess the extent to which inclusive practice is successfully implemented in a selected early years setting.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1C.4">
+      <title>1C.4</title>
+      <criteria><![CDATA[<p>	Outline why adults in early years settings seek to empower children.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1C.5">
+      <title>1C.5</title>
+      <criteria><![CDATA[<p>	Identify how adults in early years settings can empower children.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1D.6">
+      <title>1D.6</title>
+      <criteria><![CDATA[<p>	Identify two reasons why the key person approach is used in early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.1D.7">
+      <title>1D.7</title>
+      <criteria><![CDATA[<p>	Identify ways that children’s development 
+is supported by the key person approach.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2C.P4">
+      <title>2C.P4</title>
+      <criteria><![CDATA[<p>	Explain why adults in early years settings seek to empower children.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2C.P5">
+      <title>2C.P5</title>
+      <criteria><![CDATA[<p>	Describe how adults in early years settings can empower children.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2D.P6">
+      <title>2D.P6</title>
+      <criteria><![CDATA[<p>	Explain why the key person approach is used in early years settings.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2D.P7">
+      <title>2D.P7</title>
+      <criteria><![CDATA[<p>	Describe how the key person approach supports all areas of children’s development.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2C.M3">
+      <title>2C.M3</title>
+      <criteria><![CDATA[<p>	Explain how effective empowerment of children can benefit their development, using appropriate examples.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2D.M4">
+      <title>2D.M4</title>
+      <criteria><![CDATA[<p>	Explain how the key person approach supports children’s development, using appropriate examples.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2C.D3">
+      <title>2C.D3</title>
+      <criteria><![CDATA[<p>	Assess the extent to which an early years setting is successful in empowering children, using a case study.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <assessmentcriteria acid="H_504_1174.2D.D4">
+      <title>2D.D4</title>
+      <criteria><![CDATA[<p>	Evaluate the contribution of the key person approach to a selected child’s development.</p>]]></criteria>
+      <pltsvalue>
+         <key/>
+      </pltsvalue>
+   </assessmentcriteria>
+   <suggestedassignment assignmentid="H_504_1174.1">
+      <numbertitle>Assignment: 1</numbertitle>
+      <title>Why inclusive practice is important in early years settings</title>
+      <scenario><![CDATA[<p>As part of your preparation for work, the manager of the setting has asked you to look 
+at inclusive practice. This will help you to understand why early years settings place great importance on ensuring all children and their families are valued and supported. You are to produce a report.
+You need to:</p>
+         <ul>
+            <li>describe how children benefit from inclusive practice in early years settings</li>
+            <li>describe how children may be affected by non-inclusive practice in a setting</li>
+            <li>use appropriate examples to explain the potential impact on children of inclusive and non-inclusive practice in early years settings</li>
+            <li>compare how inclusive and non-inclusive practice affects children in early years settings, using case studies.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>The report could be written or IT-produced. </sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="H_504_1174.1A.1"/>
+      <criteriacovered coverage="all" acid="H_504_1174.1A.2"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2A.P1"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2A.P2"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2A.M1"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2A.D1"/>
+   </suggestedassignment>
+   <suggestedassignment assignmentid="H_504_1174.2">
+      <numbertitle>Assignment: 2</numbertitle>
+      <title>How early years settings implement inclusive practice</title>
+      <scenario><![CDATA[<p>The manager was impressed with your understanding of the importance of inclusive practice and has asked you to contribute to the handbook for students to help them to understand how the setting enables all children to be included and supported. You are to produce a chapter for the work experience book for early years students.
+You need to:</p>
+         <ul>
+            <li>describe how inclusive practice is implemented in selected early years settings</li>
+            <li>explain how a selected early years setting implements inclusive early years practice</li>
+            <li>assess the extent to which inclusive practice is successfully implemented in a selected early years setting.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>The handbook could be written/IT-produced accounts.</sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="H_504_1174.1B.3"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2B.P3"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2B.M2"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2B.D2"/>
+   </suggestedassignment>
+   <suggestedassignment assignmentid="H_504_1174.3">
+      <numbertitle>Assignment: 3</numbertitle>
+      <title>How children are empowered in early years settings</title>
+      <scenario><![CDATA[<p>Part of the induction process for new staff 
+in the early years setting includes providing information about empowering children and how the adults in the setting work to involve children in decisions that affect them. Your manager has asked you to produce materials for induction. The setting provides for children from birth up 
+to eight years so your information needs to be relevant for staff working with children across the whole age range. You are to produce a handout for new staff.
+You need to:</p>
+         <ul>
+            <li>explain why adults in early years settings seek to empower children</li>
+            <li>describe how adults in early years settings can empower children</li>
+            <li>use appropriate examples to explain how adults in an early years setting empower children</li>
+            <li>assess the extent to which an early years setting is successful in empowering children.</li>
+         </ul>]]></scenario>
+      <assessmentmethod><![CDATA[<sao_te>The handout could include written/IT-produced accounts.</sao_te>]]></assessmentmethod>
+      <criteriacovered coverage="all" acid="H_504_1174.1C.4"/>
+      <criteriacovered coverage="all" acid="H_504_1174.1C.5"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2C.P4"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2C.P5"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2C.M3"/>
+      <criteriacovered coverage="all" acid="H_504_1174.2C.D3"/>
+   </suggestedassignment>
+   <unitcontent>
+      <unitsection sid="H_504_1174.LOA">
+         <title>Learning aim A: Understand the importance of inclusive practice in early years</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic A.1 How children benefit from inclusive practice</b>
+            </p>
+            <p>Inclusive practice is the way in which children and their families are valued and support is given regardless of age, disability, race, background, gender or lifestyle in order that children and their families can benefit from the services and opportunities available. Learners must understand how children benefit from inclusive practice.</p>
+            <p>
+               <b>The positive effects of inclusive practice on children’s outcomes, including:</b>
+            </p>
+            <ul>
+               <li>development of a positive self-image affecting confidence, motivation and positive attitudes towards others</li>
+               <li>developmental benefits as any needs are identified and a wide range of opportunities is available and, if necessary, adapted to meet needs</li>
+               <li>opportunities to play and socialise with other children and thus gain social skills and learn to express feelings and emotions</li>
+               <li>development of self-efficacy, a ‘can do’ attitude, that gives children confidence to try out new activities or cope in unfamiliar situations</li>
+               <li>emotional wellbeing as a result of being accepted and cared about by others</li>
+               <li>positive benefits to health outcomes as physical needs are met through 
+inclusive practice</li>
+               <li>development of enduring positive attitudes towards others as a result of observing how to value and support others regardless of their age, disability, race, background, gender or lifestyle.</li>
+            </ul>
+            <p>
+               <b>Topic A.2 How non-inclusive practice may affect children’s outcomes</b>
+            </p>
+            <p>Learners must understand how children may be affected by non-inclusive practice.</p>
+            <p>
+               <b>How outcomes for children may be affected by non-inclusive practice:</b>
+            </p>
+            <ul>
+               <li>poor self-image as a result of feeling unwanted, helpless or inferior</li>
+               <li>low self-efficacy as children may have ‘learnt helplessness’ or see themselves 
+as victims</li>
+               <li>delayed development as a result of late identification of needs or needs not being met</li>
+               <li>poor health outcomes if physical care needs have not been attended to, e.g. individual dietary needs unmet</li>
+               <li>educational outcomes lower as a result of not being given the same opportunities to develop skills and knowledge because needs were not met.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+      <unitsection sid="H_504_1174.LOB">
+         <title>Learning aim B: Explore ways in which early years settings implement inclusive practice</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic B.1 Ways in which early years settings implement inclusive practice</b>
+            </p>
+            <p>Learners must understand how early years settings ensure that children and their families are respected and valued and how children’s unique needs can be met, allowing all children to be included and supported.</p>
+            <p>
+               <b>Inclusive practice in early years settings, including:</b>
+            </p>
+            <ul>
+               <li>adopting a non-judgemental attitude, e.g. respecting individual differences, 
+cultures and beliefs, uniqueness of each child</li>
+               <li>implementing a welcoming environment, e.g. posters in different languages, 
+greeting parents</li>
+               <li>using or displaying resources that reflect children’s lives and celebrate diversity, 
+e.g. home corner, dressing-up clothes</li>
+               <li>developing strong relationships with children and their families to ensure that children’s individual needs are fully understood</li>
+               <li>adapting provision to meet the individual needs of children</li>
+               <li>keeping children safe</li>
+               <li>establishing routines</li>
+               <li>adults consistently acting as positive role models.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+      <unitsection sid="H_504_1174.LOC">
+         <title>Learning aim C: Understand how children are empowered in early years settings</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic C.1 The importance of empowerment of children in early years settings</b>
+            </p>
+            <p>Learners must understand reasons why early years settings seek to empower children and how empowerment contributes to children’s learning and development. Definition of empowerment: giving children involvement in decisions that affect them, appropriate to their age and level of understanding. Why early years settings seek to empower children:</p>
+            <ul>
+               <li>children have a right to be informed, involved and consulted about all decisions that affect them</li>
+               <li>to value children as their feelings and opinions are taken into account</li>
+               <li>to show respect to children</li>
+               <li>to help children to respect themselves and others</li>
+               <li>to involve children in decision making, e.g. play opportunities, routines.</li>
+            </ul>
+            <p>How empowerment benefits children, including:</p>
+            <ul>
+               <li>benefits to physical development, e.g. children gain confidence to try new challenges, more motivated to practise skills, helps children to make decisions about risk</li>
+               <li>benefits to emotional development e.g. self-esteem encouraged from being given opportunities to be involved in decision-making processes, more likely to be able to manage own behaviour if they have had some input in decisions about appropriate behaviour, boundaries and expectations</li>
+               <li>benefits to social development, e.g. children develop self-respect and learn to respect and value others and the feelings of others</li>
+               <li>benefits to cognitive development, e.g. involvement in decision-making process encourages motivation, perseverance and concentration.</li>
+            </ul>
+            <p>
+               <b>Topic C.2 How adults in early years settings empower children</b>
+            </p>
+            <p>Learners must understand how adults in early years settings empower children, and the importance of ensuring children are empowered in ways appropriate to their age/stage of development. Ways adults in early years settings empower children appropriate to their age/stage of development, including:</p>
+            <ul>
+               <li>involving children in physical care routines and encouraging them to be involved in self-care to support independence, e.g. washing, dressing</li>
+               <li>giving children appropriate control and privacy when dressing, e.g. half closing a door so that toddlers can use the toilet in private</li>
+               <li>encouraging children to help themselves at meal and snack times</li>
+               <li>supporting child-initiated play whereby children can make choices as to what and how they play, and with whom</li>
+               <li>involving children in planning so that children feed back what they have enjoyed doing and can make suggestions as to what they wish to do next</li>
+               <li>involving children in all aspects of preparing the environment, e.g. choosing equipment to put out, tidying away, preparing snacks.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+      <unitsection sid="H_504_1174.LOD">
+         <title>Learning aim D: Understand the importance of the key person approach in supporting children’s development</title>
+         <sectiontext><![CDATA[<p>
+               <b>Topic D.1 Why the key person approach is used in early years settings</b>
+            </p>
+            <p>Learners need to understand that the key person approach is the way in which early years settings meet children’s emotional and care needs through the development of a strong and consistent relationship with a child and their family.</p>
+            <ul>
+               <li>Definition of key person role as someone who develops a strong and consistent relationship with a child and their family to ensure emotional and care needs are met.</li>
+               <li>Main roles of key person, e.g. developing a special bond with the child, sharing information with parents, supporting transition and observing the child.</li>
+               <li>Key person approach is a requirement of early years education/care frameworks, 
+e.g. Early Years Foundation Stage (England), Foundation Phase (Wales).</li>
+               <li>Key person approach helps parents to effectively exchange and share information effectively to support children’s physical care and development, e.g. dietary needs, allergies, health conditions, ensuring medical and physical needs are met.</li>
+            </ul>
+            <p>
+               <b>Topic D.2 How the key person approach supports children’s development</b>
+            </p>
+            <p>Learners must understand how the key person approach, in meeting children’s emotional needs, enables children’s development to be supported. How the key person approach supports children’s development:</p>
+            <ul>
+               <li>emotional development is supported as young children are prevented from becoming distressed when separated from parent/carer, e.g. key person understands children’s individual emotional needs and ways to comfort them, children feel more secure</li>
+               <li>language development is supported, e.g. children communicate more to people with whom they have a strong relationship, key person knows how best to communicate with child</li>
+               <li>children’s learning is supported, e.g. key person knows children’s interests, children feel more confident to try new experiences and explore</li>
+               <li>children’s physical development is supported, e.g. key person is aware of the child’s stage of development, recognises suitable equipment and resources</li>
+               <li>children’s social development is supported as children learn to make relationships beyond their family circle, e.g. key person approach helps children to develop relationships with others in the setting.</li>
+            </ul>]]></sectiontext>
+      </unitsection>
+   </unitcontent>
+   <printdocument>H_504_1174</printdocument>
+</unit>

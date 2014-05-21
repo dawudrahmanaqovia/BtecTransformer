@@ -1,0 +1,14 @@
+Attached is my feedback. Hopefully it's clear, but if not do please get in touch and we'll find a time to work through it.
+
+The signs are very good, as overall the conversion structure looks right and most of the data is there. However, there are some issues with missing grading criteria (which do appear in the Word doc), 1 tag has been differently used in your conversion and format tags have been missed in a number of places.
+wordxmlconversionfeedback.doc - this is my feedback, I've listed the issue and referenced the lines in your xml to try and help narrow down what I am referring to.
+LM_H_504_5533.xml - this is the xml LearningMate produced for this unit.
+H_504_5533.html - this is the html version of the xml LearningMate produced for this unit.
+wordxmliqsconversionM_503_6513.xml - this is the xml you supplied me with.
+M_503_6513.html - this is the html version of the xml you supplied me with.
+I'd suggest you review this feedback first against the tool before starting work on any new units. It may be these are simple tagging errors, but if it's an automation script issue you might want to resolve that before propagating the issue into a large number of new units.
+
+BTECs can vary a lot in size because of the wide variety in subject matter. They seem to go from 30 units up to 80 with a great deal of variation in between. Paul's probably better placed to answer that question.
+
+All the best,
+Nick.
